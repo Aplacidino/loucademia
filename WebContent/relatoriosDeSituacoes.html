@@ -1,0 +1,98 @@
+<!-- Cabeçalho Inicio -->
+<!DOCTYPE HMTL>
+<html lang ="pt-br">
+	<head>
+		<meta charset="ISO-8859-1">
+		<title> Loucademia</title>
+		<link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css">
+	</head>
+	<body>
+		<header>
+			<img src ="images/Loucademia_Logotipo.png">
+			<nav>
+				<div>
+				<a href="novoAluno.html"> Novo Aluno </a><br>
+				<a href="pesquisaDeAluno.html"> Pesquisa do Aluno </a><br>
+				<a href="controleDeAcesso.html"> Controle de Acesso </a><br>
+				<a href="relatoriosDeEntradaSaida.html"> Relatório de entrada e saída </a><br>
+				<a href="relatoriosDeSituacoes.html"> Relatório de Situações </a><br>
+				</div>
+			</nav>
+		</header>
+	<!--fim do cabeçalho -->
+	<h1>Relatórios de Situação</h1>
+	
+	<div id="infoMessage">
+		(Aqui vai eventual mensagem do sistema Confirmando sucesso ou erro)
+	</div>
+	
+	<br>
+	
+	<form>
+		<fieldset>
+			<legend>Situação</legend>
+			<label for="situacao">Situação</label><br>
+			<select name="situacao" id="situacao">
+				<option>Ativo</option>
+				<option>Inativo</option>
+				<option>Com Pendência</option>
+			</select>
+		</fieldset>
+		
+		<br>
+	
+		<input type="submit" value="Gerar Relatório">
+		
+		
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>NOME</th>
+				<th>SITUAÇÃO</th>
+				<th>CELULAR</th>
+				<th>FIXO</th>
+				<th>AÇÕES</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>André</td>
+				<td>Ativo</td>
+				<td>4191929292</td>
+				<td>4132339293</td>
+				<td>
+					<input type="button" value ="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Allison</td>
+				<td>Inativo</td>
+				<td>4191929292</td>
+				<td>4132339293</td>
+				<td>
+					<input type="button" value ="Editar">
+				</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>Alan</td>
+				<td>Ativo</td>
+				<td>4191929292</td>
+				<td>4132339293</td>
+				<td>
+					<input type="button" value ="Editar">
+				</td>
+			</tr>
+		
+		
+		</table>
+	
+<!-- Rodapé inicio -->
+
+
+
+<!--  fim do cabeçalho -->
+	</form>
+	</body>
+
+</html>
