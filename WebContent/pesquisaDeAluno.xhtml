@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:jsf="http://xmlns.jcp.org/lsf"
+	lang="pt-br">
+	<head>
+		<meta charset="ISO-8859-1" />
+		<title> Loucademia</title>
+		<link rel="stylesheet" type="text/css" href="css/Loucademia_Estilo.css" />
+	</head>
+	<body>
+		<header>
+			<img src ="images/Loucademia_Logotipo.png" />
+			<nav>
+				<div>
+				<a href="novoAluno.html"> Novo Aluno </a><br />
+				<a href="pesquisaDeAluno.html"> Pesquisa do Aluno </a><br />
+				<a href="controleDeAcesso.html"> Controle de Acesso </a><br />
+				<a href="relatoriosDeEntradaSaida.html"> Relatório de entrada e saída </a><br />
+				<a href="relatoriosDeSituacoes.html"> Relatório de Situações </a><br />
+				</div>
+			</nav>
+		</header>
+	<!--fim do cabeçaho -->
+	
+	<h1>Pesquisa de Aluno</h1>
+	
+	<div id="infoMessage">
+		(Aqui vai eventual mensagem do sistema Confirmando sucesso ou erro)
+	</div>
+	
+	<br />
+	
+	<form>
+		<fieldset>
+			<legend>Parametros da pesquisa</legend>
+			<label for ="nome">Nome:</label><br />
+			<input type="text" name="nome" id="nome" /><br />
+			<label for ="id">ID:</label><br />
+			<input type="id" name="nome" id="id" /><br />
+			<label for ="rg">RG:</label><br />
+			<input type="text" name="rg" id="rg" /><br />
+			<label for="telefoneDDD">Telefone:</label><br />
+			<input type="tel" name="telefoneDDD" id="telefoneDDD" />
+			<input type="tel" name="telefoneNumero" id="telefoneNumero" />
+		</fieldset>
+		
+		<br />
+		
+		<input type="submit" value="Pesquisar" />
+		
+		<table>
+		<tr>
+			<th>ID</th>
+			<th>NOME</th>
+			<th>RG</th>
+			<th>E-MAIL</th>
+			<th>SITUAÇÃO</th>
+			<th>AÇÕES</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>André</td>
+			<td>111.111.111.111</td>
+			<td>aplacidino@gmail.com</td>
+			<td>Ativo</td>
+			<td>
+				<input type="button" value="Editar" />
+				<input type="button" value="Excluir" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>2</td>
+			<td>Carlos</td>
+			<td>111.111.111</td>
+			<td>carlos@softblue.com</td>
+			<td>Inativo</td>
+			<td>
+				<input type="button" value="Editar" />
+				<input type="button" value="Excluir" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>3</td>
+			<td>Maromba</td>
+			<td>111.111.111</td>
+			<td>maromba@softblue.com</td>
+			<td>Pendência</td>
+			<td>
+				<input type="button" value="Editar" />
+				<input type="button" value="Excluir" />
+			</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>Zé Fit</td>
+			<td>111.111.111</td>
+			<td>zefit@softblue.com</td>
+			<td>Ativo</td>
+			<td>
+				<input type="button" value="Editar" />
+				<input type="button" value="Excluir" />
+			</td>
+		</tr>
+		
+		
+		
+		</table>
+	
+	</form>
+	
+<!-- Rodapé inicio -->
+
+
+
+<!--  fim do cabeçalho -->
+	
+	</body>
+
+</html>
